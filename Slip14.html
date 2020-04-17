@@ -1,0 +1,60 @@
+<html>
+    <head>
+         <script language="javascript">
+            function sal()
+              {
+                 var nm,dp,ds,bs,hra,da,net;
+                 nm=(document.form1.n1.value);
+                 dp=(document.form1.n2.value);
+                 ds=(document.form1.n3.value);
+		 bs=parseInt(document.form1.n4.value);
+		 hra=parseInt(document.form1.n5.value);
+                 da=parseInt(document.form1.n6.value);
+                 net=bs+hra+da;
+                document.write("<h1><center>Payslip</center></h1><hr>");
+ 		
+		document.write("<h3><br>Employee Net Salary is:"+net);
+             }
+        </script>
+      </head>
+    <form name="form1">
+       <body>
+         <table>
+            <tr>
+	       <td>Name of Employee
+               <td><input type="text"name="n1">
+            </tr>
+            
+            <tr>
+               <td>Department		          
+ 	       <td><input type="text"name="n2">
+            </tr>
+             <tr>
+                <td>Designation
+ 		<td><input type="text"name="n3">     
+           
+              
+              <tr>
+                <td>Basic Salary
+                <td><input type="text"name="n4">
+      	   </tr>
+            
+           <tr>
+               <td>HRA
+               <td><input type="text"name="n5">
+  	   </tr>
+    
+           <tr>
+             <td>DA
+             <td><input type="text"name="n6">
+           </tr>
+           
+            <tr>
+               <td><input type="button"name="n7"value="Submit"onClick=sal()>
+            </tr>
+          </table> 
+       </body>
+    </form>
+</html>
+			               
+            
